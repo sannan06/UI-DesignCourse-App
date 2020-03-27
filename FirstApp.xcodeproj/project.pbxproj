@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62808E6E242DC38B0000B411 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62808E6D242DC38B0000B411 /* MenuView.swift */; };
 		62BE1CCC2429C3CF003ADAEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE1CCB2429C3CF003ADAEB /* AppDelegate.swift */; };
 		62BE1CCE2429C3CF003ADAEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE1CCD2429C3CF003ADAEB /* SceneDelegate.swift */; };
 		62BE1CD02429C3CF003ADAEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE1CCF2429C3CF003ADAEB /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62808E6D242DC38B0000B411 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		62BE1CC82429C3CF003ADAEB /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BE1CCB2429C3CF003ADAEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62BE1CCD2429C3CF003ADAEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				62BE1CCB2429C3CF003ADAEB /* AppDelegate.swift */,
 				62BE1CCD2429C3CF003ADAEB /* SceneDelegate.swift */,
 				62BE1CCF2429C3CF003ADAEB /* ContentView.swift */,
+				62808E6D242DC38B0000B411 /* MenuView.swift */,
 				62BE1CD12429C3D1003ADAEB /* Assets.xcassets */,
 				62BE1CD62429C3D1003ADAEB /* LaunchScreen.storyboard */,
 				62BE1CD92429C3D1003ADAEB /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62BE1CCC2429C3CF003ADAEB /* AppDelegate.swift in Sources */,
+				62808E6E242DC38B0000B411 /* MenuView.swift in Sources */,
 				62BE1CCE2429C3CF003ADAEB /* SceneDelegate.swift in Sources */,
 				62BE1CD02429C3CF003ADAEB /* ContentView.swift in Sources */,
 			);
