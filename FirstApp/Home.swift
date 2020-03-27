@@ -17,33 +17,22 @@ struct Home: View {
             Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                HStack {
-                    Text("Watching").font(.system(size: 28, weight: .bold))
-                    
-                    Spacer()
-                    
-                    AvatarView(showProfile: self.$showProfile)
+            HomeView(showProfile: self.$showProfile)
+                .padding(.top, 44)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+                .offset(y: self.showProfile ? -450 + self.viewState.height/5: 0)
+                .rotation3DEffect(Angle(degrees: self.showProfile ? Double(self.viewState.height/10) - 10 : 0), axis: (x: 10.0, y: 0, z: 0))
+                .scaleEffect(self.showProfile ? 0.9 : 1)
+                .onTapGesture {
+                    if (self.showProfile) {self.showProfile.toggle()}
                 }
-                .padding(.horizontal)
-                .padding(.top, 30)
-                Spacer()
-            }
-            .padding(.top, 44)
-            .background(Color.white)
-            .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-            .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
-            .offset(y: self.showProfile ? -450 + self.viewState.height/5: 0)
-            .rotation3DEffect(Angle(degrees: self.showProfile ? Double(self.viewState.height/10) - 10 : 0), axis: (x: 10.0, y: 0, z: 0))
-            .scaleEffect(self.showProfile ? 0.9 : 1)
-            .onTapGesture {
-                if (self.showProfile) {self.showProfile.toggle()}
-            }
-            .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-            .edgesIgnoringSafeArea(.all)
+                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+                .edgesIgnoringSafeArea(.all)
                         
             MenuView()
-                .offset(y: showProfile ? 0 : 1000)
+                .offset(y: showProfile ? 0 : screen.height)
                 .offset(y: self.viewState.height)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                 .gesture(
@@ -83,3 +72,5 @@ struct AvatarView: View {
         }
     }
 }
+
+let screen = UIScreen.main.bounds
