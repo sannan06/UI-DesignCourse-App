@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6249E72B242EF09A0080C2B4 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249E72A242EF09A0080C2B4 /* UpdateList.swift */; };
 		6249E72D242EF4410080C2B4 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249E72C242EF4410080C2B4 /* UpdateDetail.swift */; };
+		6249E72F242EF8780080C2B4 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249E72E242EF8780080C2B4 /* UpdateStore.swift */; };
 		62808E6E242DC38B0000B411 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62808E6D242DC38B0000B411 /* MenuView.swift */; };
 		62808E70242DCF280000B411 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62808E6F242DCF280000B411 /* Home.swift */; };
 		62808E72242DEA310000B411 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62808E71242DEA310000B411 /* HomeView.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		6249E72A242EF09A0080C2B4 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		6249E72C242EF4410080C2B4 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
+		6249E72E242EF8780080C2B4 /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		62808E6D242DC38B0000B411 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		62808E6F242DCF280000B411 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		62808E71242DEA310000B411 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				62808E6F242DCF280000B411 /* Home.swift */,
 				6249E72A242EF09A0080C2B4 /* UpdateList.swift */,
 				6249E72C242EF4410080C2B4 /* UpdateDetail.swift */,
+				6249E72E242EF8780080C2B4 /* UpdateStore.swift */,
 				62808E71242DEA310000B411 /* HomeView.swift */,
 				62808E6D242DC38B0000B411 /* MenuView.swift */,
 				62BE1CD12429C3D1003ADAEB /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62BE1CCC2429C3CF003ADAEB /* AppDelegate.swift in Sources */,
+				6249E72F242EF8780080C2B4 /* UpdateStore.swift in Sources */,
 				6249E72B242EF09A0080C2B4 /* UpdateList.swift in Sources */,
 				62808E6E242DC38B0000B411 /* MenuView.swift in Sources */,
 				6249E72D242EF4410080C2B4 /* UpdateDetail.swift in Sources */,
